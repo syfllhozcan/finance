@@ -12,7 +12,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
 
   final TextEditingController passwordController = TextEditingController();
-
+  bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +54,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 16),
               CheckBoxWidget(
-                value: true,
-                onChanged: (value) {},
+                value: isChecked,
+                onChanged: (value) {
+                  setState(() {
+                    isChecked = value ?? false;
+                  });
+                },
                 label: "Remember Me",
               ),
               const SizedBox(height: 24),

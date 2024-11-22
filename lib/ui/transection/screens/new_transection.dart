@@ -27,7 +27,7 @@ class _NewTransectionState extends State<NewTransection> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
                 const SizedBox(height: 16),
@@ -70,7 +70,7 @@ class _NewTransectionState extends State<NewTransection> {
               ? const IncomePlaceWidget()
               : const OutcomePlaceWidget(),
           Padding(
-            padding: const EdgeInsets.only(left: 24, right: 24, bottom: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
             child: ButtonWidget(
               text: "Save Transection",
               onPressed: () {
@@ -100,7 +100,7 @@ class IncomePlaceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
           children: [
             AmountTileCard(),
@@ -159,7 +159,7 @@ class _OutcomePlaceWidgetState extends State<OutcomePlaceWidget> {
       child: ListView(
         children: [
           const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -180,7 +180,7 @@ class _OutcomePlaceWidgetState extends State<OutcomePlaceWidget> {
             height: 100,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               itemCount: 5, // 5 adet kutu
               itemBuilder: (context, index) {
                 return InkWell(
@@ -196,7 +196,7 @@ class _OutcomePlaceWidgetState extends State<OutcomePlaceWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
