@@ -1,5 +1,6 @@
 import 'package:finance/config/image/image/images.dart';
 import 'package:finance/shared_widget/custom_app_bar.dart';
+import 'package:finance/shared_widget/icon_circle_button.dart';
 import 'package:finance/shared_widget/simple_text.dart';
 import 'package:flutter/material.dart';
 
@@ -107,7 +108,31 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
               const SizedBox(height: 24),
-              IconButtonRow(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconCircleButton(
+                      image: ImageService.google,
+                      backgroundColor: const Color(0xffECF1F6),
+                      iconColor: Colors.black,
+                      //label: 'Google',
+                      onPressed: () {}),
+                  const SizedBox(width: 32),
+                  IconCircleButton(
+                      image: ImageService.apple,
+                      backgroundColor: const Color(0xffECF1F6),
+                      iconColor: Colors.black,
+                      //label: 'Apple',
+                      onPressed: () {}),
+                  const SizedBox(width: 32),
+                  IconCircleButton(
+                      image: ImageService.phone,
+                      backgroundColor: const Color(0xffECF1F6),
+                      iconColor: Colors.black,
+                      //label: 'Phone',
+                      onPressed: () {}),
+                ],
+              ),
             ],
           ),
         ),

@@ -1,4 +1,6 @@
+import 'package:finance/config/image/image/images.dart';
 import 'package:finance/shared_widget/custom_app_bar.dart';
+import 'package:finance/shared_widget/icon_circle_button.dart';
 import 'package:finance/ui/auth/widgets/button_widget.dart';
 import 'package:finance/ui/auth/widgets/icon_button_row.dart';
 import 'package:finance/ui/auth/widgets/text_field_widget.dart';
@@ -137,7 +139,31 @@ class SignUpPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 24),
-              IconButtonRow(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconCircleButton(
+                      image: ImageService.google, // Google ikonu için
+                      backgroundColor: const Color(0xffECF1F6), //Colors.white,
+                      iconColor: Colors.black,
+                      //label: 'Google',
+                      onPressed: () {}),
+                  const SizedBox(width: 32),
+                  IconCircleButton(
+                      image: ImageService.apple, // Apple ikonu için
+                      backgroundColor: const Color(0xffECF1F6),
+                      iconColor: Colors.black,
+                      //label: 'Apple',
+                      onPressed: () {}),
+                  const SizedBox(width: 32),
+                  IconCircleButton(
+                      image: ImageService.phone, // Phone ikonu için
+                      backgroundColor: const Color(0xffECF1F6),
+                      iconColor: Colors.black,
+                      //label: 'Phone',
+                      onPressed: () {}),
+                ],
+              ),
               const SizedBox(height: 30),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 24),
