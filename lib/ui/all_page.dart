@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:finance/config/image/icon/icons.dart';
 import 'package:finance/shared_widget/custom_app_bar.dart';
 import 'package:finance/shared_widget/divider_widget.dart';
+import 'package:finance/shared_widget/show_bottom_card.dart';
 import 'package:finance/ui/auth/screens/otp_page.dart';
 import 'package:finance/ui/auth/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
@@ -705,188 +706,32 @@ class AllPage extends StatelessWidget {
                         const SizedBox(height: 24),
                         Row(
                           children: [
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.qr,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Scan Qr",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.qr,
+                              text: "Scan Qr",
+                              onTap: () {},
                             ),
                             const SizedBox(width: 16),
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.profile_bold,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "With User Id",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.profile_bold,
+                              text: "With User Id",
+                              onTap: () {},
                             ),
                           ],
                         ),
                         const SizedBox(height: 16),
                         Row(
                           children: [
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.phone_bold,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "With Phone",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.phone_bold,
+                              text: "With Phone",
+                              onTap: () {},
                             ),
                             const SizedBox(width: 16),
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.send,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Send Invite",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.send,
+                              text: "Send Invite",
+                              onTap: () {},
                             ),
                           ],
                         )
@@ -978,188 +823,32 @@ class AllPage extends StatelessWidget {
                         const SizedBox(height: 24),
                         Row(
                           children: [
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.customers,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Customers",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.customers,
+                              text: "Customers",
+                              onTap: () {},
                             ),
                             const SizedBox(width: 16),
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.products,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Products",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.products,
+                              text: "Products",
+                              onTap: () {},
                             ),
                           ],
                         ),
                         const SizedBox(height: 16),
                         Row(
                           children: [
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.taxes,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Taxes",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.taxes,
+                              text: "Taxes",
+                              onTap: () {},
                             ),
                             const SizedBox(width: 16),
-                            Container(
-                              height: 140,
-                              width: (w - 64) / 2,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                    color: const Color(0xffE3E9ED), width: 1),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    height: 48,
-                                    width: 48,
-                                    padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffE2E0E4),
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                          color: const Color(0xffE3E9ED),
-                                          width: 1),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      IconService.types,
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Types",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.none,
-                                      color: Color(0xff1f2c37),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            ShowBottomCard(
+                              icon: IconService.types,
+                              text: "Types",
+                              onTap: () {},
                             ),
                           ],
                         )
@@ -1176,7 +865,7 @@ class AllPage extends StatelessWidget {
   }
 }
 
-// ignore: must_be_immutable
+//liste tile tasarımı
 class SinglePage extends StatelessWidget {
   VoidCallback callbackAction;
   String text;
@@ -1210,7 +899,7 @@ class SinglePage extends StatelessWidget {
   }
 }
 
-// ignore: must_be_immutable
+//shadow circle tasarımı
 class ShowDialogs extends StatelessWidget {
   VoidCallback callbackAction;
   String text;
