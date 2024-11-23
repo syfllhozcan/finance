@@ -7,7 +7,8 @@ class TextFieldIconWidget extends StatelessWidget {
   final bool obscureText;
   final int maxLines;
   final String icon;
-  TextFieldIconWidget({
+  const TextFieldIconWidget({
+    super.key,
     required this.hintText,
     required this.controller,
     this.maxLines = 1,
@@ -26,18 +27,18 @@ class TextFieldIconWidget extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: const TextStyle(
-            color: Color(0xff78828A), // hint yazı rengi
-            fontSize: 12, // Yazı boyutu
+            color: Color(0xff78828A),
+            fontSize: 12,
             fontWeight: FontWeight.w300,
           ),
           filled: true,
-          fillColor: Colors.white, // Arka plan rengi
+          fillColor: Colors.white,
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15), // Köşeleri daha yuvarlatma
+            borderRadius: BorderRadius.circular(15),
             borderSide: const BorderSide(
-              color: Color(0xffECF1F6), // border rengi
+              color: Color(0xffECF1F6),
             ),
           ),
           enabledBorder: OutlineInputBorder(
