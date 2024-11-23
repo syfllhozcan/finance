@@ -5,8 +5,8 @@ import 'package:finance/shared_widget/custom_app_bar.dart';
 import 'package:finance/shared_widget/custom_dropdown_widget.dart';
 import 'package:finance/shared_widget/simple_text.dart';
 import 'package:finance/ui/auth/widgets/button_widget.dart';
-import 'package:finance/ui/auth/widgets/text_field_widget.dart';
-import 'package:finance/ui/transection/widgets/TextFieldIconWidget.dart';
+import 'package:finance/shared_widget/text_field_widget.dart';
+import 'package:finance/shared_widget/text_field_icon_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

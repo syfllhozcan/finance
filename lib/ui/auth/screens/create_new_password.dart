@@ -1,6 +1,6 @@
 import 'package:finance/shared_widget/simple_text.dart';
 import 'package:finance/ui/auth/widgets/button_widget.dart';
-import 'package:finance/ui/auth/widgets/text_field_widget.dart';
+import 'package:finance/shared_widget/text_field_widget.dart';
 import 'package:flutter/material.dart';
 
 class CreateNewPasswordPage extends StatelessWidget {
