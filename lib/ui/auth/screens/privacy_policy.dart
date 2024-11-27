@@ -45,7 +45,8 @@ class PrivacyPolicyPage extends StatelessWidget {
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Color(0xff9CA4AB),
+                          color: Color(0xff78828a),
+                          //color: Color(0xff9CA4AB),
                           height: 1.5,
                         ),
                       ),

@@ -56,7 +56,7 @@ class ForgotPasswordPage extends StatelessWidget {
                           fontSize: 28,
                         ),
                       ),
-                      const SizedBox(height: 8),
+                      SizedBox(height: 8),
                       Text(
                         "Recover your account password",
                         style: TextStyle(

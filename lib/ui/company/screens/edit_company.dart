@@ -1,4 +1,5 @@
 import 'package:finance/config/image/icon/icons.dart';
+import 'package:finance/config/image/image/images.dart';
 import 'package:finance/shared_widget/custom_app_bar.dart';
 import 'package:finance/shared_widget/simple_text.dart';
 import 'package:finance/ui/auth/widgets/button_widget.dart';
@@ -20,10 +21,9 @@ class EditCompanyPage extends StatelessWidget {
               const SizedBox(height: 40),
               Stack(
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 50,
-                    backgroundImage:
-                        AssetImage("assets/images/logo_company.png"),
+                    backgroundImage: AssetImage(ImageService.logo_company),
                   ),
                   Positioned(
                     right: 0, // Sağda küçük bir boşluk bırakabilirsiniz

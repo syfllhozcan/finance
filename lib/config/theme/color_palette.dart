@@ -1,24 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ColorPalette {
-  static const primary = Color(0xff92A3FD);
-  static const primaryLight = Color(0xff9DCEFF);
-  //static const backgroundColor = Color.fromARGB(255, 240, 240, 240);
-  static const secondary = Color(0xffC58BF2);
-  static const secondaryLight = Color(0xffEEA4CE);
-  static const primaryG = [primary, primaryLight];
-  static const secondaryG = [secondary, secondaryLight];
-  //static const black = Color(0xff1D1617);
-  //static const white = Color(0xffFFFFFF);
-  static const gray1 = Color(0xff7B6F72);
-  static const gray2 = Color(0xffADA4A5);
-  static const gray3 = Color(0xffDDDADA);
-  static const gray4 = Color.fromARGB(255, 249, 240, 240);
-  static const success = Color(0xff42D742);
-  static const warning = Color(0xffFFD600);
-  static const danger = Color(0xffFF0000);
-
   ///////////////////////////////// Finance /////////////////////////////
+  static const primary = Color(0xff0369A1);
+  static const secondary = Color(0xfff3f3f3);
   static const backgroundColor = Color(0xffFFFFFF);
   static const white = Color(0xffFFFFFF);
   static const black = Color(0xff000000);
@@ -28,6 +13,7 @@ class ColorPalette {
   static const borderColor = Color(0xffF2F2F5);
   static const borderColorDialog = Color(0xffE3E9ED);
   static const textColor = Color(0xff1f2c37);
+  static const textColor2 = Color(0xff78828A);
   //politika ve kullanım koşulları sayfası grey1 koyu gri
   static const textColorSecondary = Color(0xff9CA4AB);
   static const hintColor = Color(0xff78828A);
@@ -58,6 +44,26 @@ class ColorPalette {
   static const cardBackgroundColor = Color(0xffF3F3F3);
   static const permitBoxColor = Color(0xff99B3AD);
   static const dolarBoxColor = Color(0xffE2E0E4);
+
+  ///////////////////////////////////////////////////
+  /*
+  //static const primary = Color(0xff92A3FD);
+  static const primaryLight = Color(0xff9DCEFF);
+  //static const backgroundColor = Color.fromARGB(255, 240, 240, 240);
+  //static const secondary = Color(0xffC58BF2);
+  static const secondaryLight = Color(0xffEEA4CE);
+  static const primaryG = [primary, primaryLight];
+  static const secondaryG = [secondary, secondaryLight];
+  //static const black = Color(0xff1D1617);
+  //static const white = Color(0xffFFFFFF);
+  static const gray1 = Color(0xff7B6F72);
+  static const gray2 = Color(0xffADA4A5);
+  static const gray3 = Color(0xffDDDADA);
+  static const gray4 = Color.fromARGB(255, 249, 240, 240);
+  static const success = Color(0xff42D742);
+  static const warning = Color(0xffFFD600);
+  static const danger = Color(0xffFF0000);
+*/
 
   ///////////////////////////////////////////////////////////////////////
 

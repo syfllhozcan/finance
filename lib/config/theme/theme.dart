@@ -21,7 +21,7 @@ class AppTheme {
       // inputDecorationTheme: inputTheme(fontPrimary, fontSecondary),
       // dividerTheme:
       //     const DividerThemeData(color: ColorPalette.neutral95, thickness: 1.5),
-      dividerColor: ColorPalette.gray3,
+      dividerColor: ColorPalette.dividerColor,
       bottomSheetTheme: BottomSheetThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
@@ -67,8 +67,8 @@ class AppTheme {
         ),
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        backgroundColor: ColorPalette.white,
-        foregroundColor: ColorPalette.gray2,
+        backgroundColor: ColorPalette.primary,
+        foregroundColor: ColorPalette.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),

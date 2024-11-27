@@ -1,3 +1,4 @@
+import 'package:finance/shared_widget/simple_text.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -20,13 +21,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: false,
-      title: Text(
-        title,
-        style: const TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
+      title:
+          SimpleText(title: title, fontWeight: FontWeight.bold, fontSize: 16),
       backgroundColor: backgroundColor,
       elevation: elevation,
       leading: IconButton(
